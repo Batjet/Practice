@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*--------------------------------------------------------------- HOME PAGE-------------------------------------------------------------- */
+.home{
+    max-width: 1920px;
+    background:  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url("../assets/images/bg.jpg") no-repeat left bottom;
+	height: 100vh;
+	min-height: 500px;
+	background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 0 20px;
+}
+
+.home .left{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+}
+.home .school{
+   padding-bottom: 200px;
+}
+.home .title{
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 700;
+    font-size: 70px;
+    color: white;
+    width: 100%;
+    line-height: 50px;
+}
+.home .title span{
+    color: #ffc426;
+}
+.home h2{
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 19px;
+    color: white;
+    font-weight: lighter;
+}
+.home .left p{
+    position: absolute;
+    bottom: -70%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 11px;
+}
+.home .right{
+    width: 40%;
+    position: relative;
+    padding-left: 150px;
+}
+
+.home .right .container{
+    position: relative;
+    display: flex;
+    align-content: center;
+    max-width: 454px;
+    width: 100%;
+    height: 532px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 45px 45px;
+    
+
+}
+.home .right .logo{
+    margin: 0;
+    position: absolute;
+    top: -2%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.home .right .logo img{
+    height: 165px;
+    width: 157px;
+    
+}
+.home .right .container .forms{
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    
+}
+.home .right .container .form span{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    color: #244053;
+    font-size: 33px;
+    margin-bottom: 10px;
+    display: block;
+}
+.home .right .container .form{
+
+    width: 100%;
+    background-color: #fff;
+   
+}
+.home .right .container .form .input-field{
+    position: relative;
+    height: 60px;
+    width: 100%;
+}
+.home .right .container .form .input-field input{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    border-top: 1px solid #999; 
+    border-bottom: 1px solid #999; 
+}
+.home .right .container .form .input-field input:focus{
+    border-top: 1px solid #225957 ; 
+    border-bottom: 1px solid #225957; 
+}
+.home .right .container .input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+}
+.home .right .container .input-field i.showHidePw{
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+.home .right .container .form .button input{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    margin-top: 5px;
+    background: #244053;
+    border-radius: 4px;
+    color: white;
+}
+.home .right .container .form .button input:hover{
+    background: #152530;
+}
+.form .text{
+    color: #244053;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 10px 0 5px 0;
+    display: block;
+    cursor: pointer;
+}
+.form p{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    margin: 10px 0;
+    color: #999;
+}
+.form a{
+    display: block;
+    color: #244053;
+    font-family: 'PT Sans', sans-serif;
+}
+.form .btn{
+    text-align: center;
+    width: 100%;
+    padding: 15px 35px;
+    border: 1px solid #225957;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.form .enroll{
+    margin-top: 1px;
+    margin-bottom: 10px;
+}
+.form .request{
+    font-size: 20px;
+    font-weight: 700;  
+}
+.form .request:hover{
+    background: #244053;
+    color: white;
+}
+/*---------------------------------------------------------------------------- END OF HOME PAGE---------------------------------------------------- */
+
+
+
+
+
