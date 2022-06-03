@@ -298,12 +298,13 @@
     and (min-device-width : 500px) 
     and (max-device-width : 760px){
         .home{
+		height: 100vh;
             flex-direction: column;
             justify-content: center;
             flex-direction: column;
             align-items: center;
             padding: 0;
-            overflow: scroll;
+         
         }
         .home .right{
             margin: 0;  
@@ -347,7 +348,7 @@
 @media only screen 
     and (max-width: 320px){
         .home{
-            overflow: scroll;
+	height: 100vh;
             width: 100%;
             justify-content: center;
             flex-direction: column;
@@ -449,6 +450,7 @@
 @media only screen 
     and (max-width: 480px){
         .home{
+	   height: 100vh;
             width: 100%;
             justify-content: center;
             flex-direction: column;
