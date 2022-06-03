@@ -16,7 +16,7 @@
     justify-content: space-between;
 }
 .home .left{
-    padding: 250px 40px 50px 200px;
+    padding: 20px;
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,6 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin: auto;
 }
 .home .title{
     font-family: 'Frank Ruhl Libre', serif;
@@ -52,7 +51,6 @@
 }
 .home .left .sub{
     margin-top: 20px;
-    padding-right: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,6 +61,7 @@
     text-align: center;
     color: white;
     font-weight: lighter;
+    align-self: center;
 } 
 .home .left .sub .student a,
 .home .left .sub .faculty a{
@@ -72,8 +71,7 @@
     text-align: center;
     font-weight: 600;
     font-size: 30px;
-    padding: 10px 0;
-
+    padding: 10px 0; 
 }
 .home .left .sub .student{
     background: #ffc426;
@@ -81,8 +79,7 @@
     width: 100%;
     border-radius: 5px;
     margin-top: 20px;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;  
 }
 .home .student a{
     color: #584106;
@@ -96,10 +93,10 @@
 .home .faculty a{
     color: white;
 }
-.home .left p{
+.home p{
     margin-top: 10px;
     color: white;
-    font-size: 11px;
+    font-size: 10px;
     font-family: 'Roboto', sans-serif;
 }
 .home .right{
@@ -112,7 +109,6 @@
     width: 100%;
     max-width: 438px;
     margin-left: 50px;
-  
 }
 .home .right .advisory .header{
     background: #ffff;
@@ -148,6 +144,186 @@
     height: 380px;
     width: 100%;
     padding: 10px;
+}
+
+/* MEDIA QUERY */
+@media screen and (min-width: 1201px)
+and (max-device-width: 1500px){
+    .home .left{
+        padding-right: 0;
+    }
+    .home .left .school .title{
+        font-size: 40px;
+        line-height: 30px;
+    }
+    .home .left .school .title span{
+        font-size: 30px;
+    }
+    .home .left .container .school .title-2{
+        font-size: 14px;
+    }
+
+}
+@media screen and (min-width: 1024px)
+and (max-device-width: 1200px){
+    .home .left{
+        padding-right: 0;
+    }
+    .home .left .school .title{
+        font-size: 30px;
+        line-height: 25px;
+    }
+    .home .left .school .title span{
+        font-size: 25px;
+    }
+    .home .left .container .school .title-2{
+        font-size: 10px;
+    }
+    .home .right .advisory{
+        margin: 0;
+    }
+
+    .home .right{
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1023px){
+    .home .left{
+        margin: 0;
+        padding: 20px 0 20px 20px;
+        text-align: center;
+    }
+    .home .left .container{
+        padding: 0 10px;
+        margin: 0;
+        flex-direction: column;
+    }
+    .home .left .container .school .title{
+        font-size: 30px;
+        line-height: 25px;
+    }
+    .home .left .container .school .title-2{
+        font-size: 12px;
+    }
+    .home .left .container .school .title span{
+        font-size: 25px;
+    }
+    .home .left .sub{
+        margin: 20px 0 0 0;
+        padding: 0;
+    }
+    .home .left .sub .text{
+        font-size: 18px;
+    }
+    .home .left .sub .faculty,
+    .home .left .sub .student{
+        max-width: 300px;
+    }
+    .home .left .sub .faculty a,
+    .home .left .sub .student a{
+        font-size: 25px;
+    }
+    .home .left .sub p{
+        margin-top: 100px;
+        font-size: 10px;
+
+    }
+    .home .right{
+        padding: 20px 20px 20px 0;
+        margin: 0;
+    }
+    .home .right .advisory{
+        margin: 0;
+        padding: 0;
+        max-width: 358px;
+    }
+    .home .right .advisory .header{
+        height: 30px;
+    }
+    .home .right .advisory .header h2{
+        font-size: 14px;
+    }
+    .home .right .advisory .content{
+        height: 300px;
+    }
+    .home .right .advisory .content h3{
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        padding-top: 5px;
+        padding-left: 10px;
+        color: #225957;
+    }
+    .home .right .advisory .content img{
+        height: 280px;  
+    }
+
+}
+
+@media screen and (min-device-width: 320px)
+and (max-device-width: 767px){
+    .home{
+        width: 100%;
+        background: cover;
+        padding: 10px;
+    }
+    .home .right{
+        display: none;
+    }
+    .home .left{
+        padding: 0;
+        width: 100%;
+    }
+    .home .left .logo img{
+        height: 150px;
+        width: 150px;
+    }
+    .home .left .school{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .home .left .school .title{
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .home .left .school .title span{
+        font-size: 20px;
+    }
+    .home .left .container .school .title-2{
+        display: none;
+    }
+    .home .left .container{
+        flex-direction: column;
+        padding: 0;
+        margin: 0 0 30px 0;
+    }
+    .home .left .sub{
+        padding: 0;
+        margin: 0;
+    }
+    .home .left .sub .text{
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+    }
+    .home .left .sub .faculty,
+    .home .left .sub .student{
+        max-width: 280px;
+    }
+    .home .left .sub .student a,
+    .home .left .sub .faculty a{
+        padding: 5px;
+        font-size: 28px;
+    }
+    .home .left .sub p{
+        font-size: 8px;
+        padding-top: 100px;
+        margin: 0;
+    }
 }
 
 
