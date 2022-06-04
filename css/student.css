@@ -318,6 +318,7 @@ and (max-width: 500px){
     .home .right{
         display: flex;
         justify-content: center;
+         margin-bottom: 40px;
     }
     .home .right .forms .form span{
         font-size: 25px;
